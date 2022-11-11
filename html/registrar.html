@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MOVIMIENTO RECTILINEO UNIFORME </title>
+    <script src="../js/funciones.js"> </script>
+    <link href="../css/estilos.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <ul>
+            <li class="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+                <a> USUARIO </a>
+                <div id="subseccion1">
+                    <p> <a href=""> REGISTRAR </a> </p> 
+                    <p> <a href=""> LOGIN </a> </p>
+                </div>
+            </li>
+            <li class="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+                <a> FUNCIONES </a>
+                <div id="subseccion2">
+                    <p> <a href="html/mru.html"> MRU </a> </p>
+                    <p> <a href=""> EDAD </a> </p>
+                    <p> <a href=""> NUMERO MAYOR </a> </p>
+                    <p> <a href=""> JUEGO </a> </p>
+                    <p> <a href=""> ARRAYS </a> </p>
+                </div>
+            </li>
+            <li class="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+                <a> NOSOTROS </a>
+                <div id="subseccion3">
+                    <p> <a href=""> MISION </a> </p>
+                    <p> <a href=""> VISION </a> </p>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <section id="contenedor">
+        
+        <form action="../php/insertar.php" method="post">
+
+            <center>
+            <input type="text" placeholder="Digite nombre" id="cajanombre" name="nombre"> <br> <br>
+            <input type="text" placeholder="Digite apellido" id="cajaapellido" name="apellido"> <br> <br>
+            <input type="email" placeholder="Digite e-mail" id="cajamail" name="email"> <br> <br>
+            <input type="text" placeholder="Identificacion" id="cajaidentifi" name="iden"> <br> <br>
+            <input type="submit" value="REGISTRAR">
+            </center>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
